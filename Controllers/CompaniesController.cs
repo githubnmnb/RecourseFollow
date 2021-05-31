@@ -34,7 +34,7 @@ namespace SahisRucu.Models
         List<companyList> result = new List<companyList>();
 
         var res = SQL.read("SELECT TramerNo, SirketAdi, Aktif, Yetkili, VergiNo FROM Sirketler ORDER BY SirketAdi", new { });
-
+		//Sql Read
         foreach (var item in res)
         {
           result.Add(new companyList
